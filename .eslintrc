@@ -1,0 +1,35 @@
+{
+  "ecmaFeatures": {
+    "blockBindings": true,
+    "forOf": true,
+    "jsx": true
+  },
+  "extends": "airbnb",
+  "globals": {
+    "__DEV__": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "arrow-body-style": 0,
+    "semi": 0,
+    "func-names": 0,
+    "react/jsx-quotes": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "no-use-before-define": [2, "nofunc"],
+    "new-cap": 0,
+    "no-param-reassign": 0,
+    "no-unused-vars": 1,
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "react/jsx-boolean-value": 0,
+    "id-length": [2, {"exceptions": ["x", "y", "Q", "e"]}],
+    "max-len": [2, 120, 2, {"ignoreUrls": true}],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.spec.js"]}],
+    "import/prefer-default-export": 0
+  },
+  "env": {
+    "node": true,
+    "mocha": true,
+    "jasmine": true,
+  },
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@aurity/react-native-web-storage",
+  "version": "0.0.1",
+  "description": "A synchronous local storage wrapper for both react-native(AsyncStorage) and browser(localStorage)",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf lib es docs",
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
+    "build": "npm run build:commonjs && npm run build:es",
+    "prepublish": "npm run clean && npm run build",
+    "lint": "eslint src",
+    "pretest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurity/react-native-web-storage.git"
+  },
+  "keywords": [
+    "react-native",
+    "localStrage",
+    "AsyncStorage",
+    "web",
+    "react",
+    "storage"
+  ],
+  "author": "Peter Kowalczyk <peter@aurity.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aurity/react-native-web-storage/issues"
+  },
+  "homepage": "https://github.com/aurity/react-native-web-storage#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.5.2",
+    "babel-preset-react-native": "^1.9.1",
+    "babel-preset-stage-1": "^6.16.0",
+    "cross-env": "^3.1.4",
+    "eslint": "^3.13.0",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react-native": "^2.2.1",
+    "rimraf": "^2.5.4"
+  }
+}
