@@ -16,7 +16,7 @@ React-Native localStorage is asynchronous and Browser synchronous. Therefore, cr
 
 ## Usage 
 
-1. How to hydrate redux store with data from localStorage
+- How to hydrate redux store with data from localStorage
 ```javascript
 import { HydrateStore } from '@aurity/react-native-web-storage'
 
@@ -32,7 +32,7 @@ function App({ store }) {
 export default HydrateStore(store)(App)
 ```
 
-2. How to work with storage
+- How to work with storage
 
 ```javascript
 import { storage } from '@aurity/react-native-web-storage'
@@ -50,10 +50,12 @@ storage.getToken(value) // gets oAuth token
 #### You are welcome to ask any question in the [issues](https://github.com/aurity/react-native-web-storage/issues) page.
 
 #### TODO:
-- [ ] missing "key" support (web localStorage API)
-- [ ] missing "length" support (web localStorage API)
-- [ ] missing tests (cross-platform problems)
-- [ ] add support for not optimistic update
+- [ ] add "key" support (web localStorage API)
+- [ ] add "length" support (web localStorage API)
+- [ ] add tests (cross-platform problems)
+- [ ] add support for not optimistic update for AsyncStorage
 
 ### Changelog
-#### 0.0.10 
+#### 0.0.1
+ - Storage support for AsyncStorage (react-native) and browser
+ - HOC helper to hydrate redux store
