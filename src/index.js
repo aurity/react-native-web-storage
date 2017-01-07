@@ -1,5 +1,7 @@
-import HydrateWrapperStore from './hydrate-store-wrapper'
+import HydrateStore from './hydrate-store-wrapper'
+import storage from './storage/storage'
 
 export {
-  HydrateWrapperStore,
+  HydrateStore,
+  storage,
 }
