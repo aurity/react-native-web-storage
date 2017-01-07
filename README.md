@@ -3,6 +3,12 @@ A synchronous local storage wrapper for both react-native(AsyncStorage) and brow
 
 ## Why?
 
+#### Problem: 
+React-Native localStorage is asynchronous and Browser synchronous. Therefore, creating one app for both platforms which uses localStorage needs unified API.
+
+#### Solution:
+- For native platforms -> Abstract AsyncStorage and use inMemoryLocalStorage with sync API (the same as browser) and async it in background (always optimistic update)
+- For browser -> Use browser LocalStorage with richer API as AsyncStorage
 
 ## Install
 
@@ -47,6 +53,7 @@ storage.getToken(value) // gets oAuth token
 - [ ] missing "key" support (web localStorage API)
 - [ ] missing "length" support (web localStorage API)
 - [ ] missing tests (cross-platform problems)
+- [ ] add support for not optimistic update
 
 ### Changelog
 #### 0.0.10 
