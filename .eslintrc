@@ -6,7 +6,7 @@
   },
   "extends": "airbnb",
   "globals": {
-    "__DEV__": true
+    "localStorage": true
   },
   "parser": "babel-eslint",
   "rules": {

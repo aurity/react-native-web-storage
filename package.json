@@ -43,5 +43,9 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react-native": "^2.2.1",
     "rimraf": "^2.5.4"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   }
 }

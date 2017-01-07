@@ -1,3 +1,5 @@
-const works = {}
+import HydrateWrapperStore from './hydrate-store-wrapper'
 
-export default works
+export {
+  HydrateWrapperStore,
+}
